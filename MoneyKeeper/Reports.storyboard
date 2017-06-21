@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reports-->
+        <scene sceneID="FTR-wQ-JLc">
+            <objects>
+                <viewController storyboardIdentifier="Reports" id="hEa-kv-u0Y" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cco-ed-9Iw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Alf-hH-Vyh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="axY-O6-XOP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Reports" image="BaoCao_light" selectedImage="BaoCao_hightlight" id="09K-st-Lee"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0In-r0-NqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BaoCao_hightlight" width="25" height="25"/>
+        <image name="BaoCao_light" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Records-->
+        <scene sceneID="e7R-WB-0EP">
+            <objects>
+                <viewController id="FdE-4f-zUG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hC0-m6-5KS"/>
+                        <viewControllerLayoutGuide type="bottom" id="8xG-qV-MRP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wMC-z5-Qrg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Records" image="GhiChep_light" selectedImage="GhiChep_hightlight" id="zhk-Fm-UQ2" userLabel="Records"/>
+                    <navigationItem key="navigationItem" id="OLs-dy-YRQ">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="Book" id="B7L-FK-rWr">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                        <view key="titleView" contentMode="scaleToFill" id="yXX-3R-z6e">
+                            <rect key="frame" x="81.5" y="5.5" width="212" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6y3-Zz-fSE">
+                                    <rect key="frame" x="0.0" y="0.0" width="212" height="33"/>
+                                    <color key="backgroundColor" red="0.1065591499209404" green="0.72313791513442993" blue="0.70886713266372681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="180" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="Ghi theo tiền còn" image="Sort_down"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="6y3-Zz-fSE" secondAttribute="trailing" id="7Z1-VW-dOi"/>
+                                <constraint firstAttribute="bottom" secondItem="6y3-Zz-fSE" secondAttribute="bottom" id="L4k-n7-rmN"/>
+                                <constraint firstItem="6y3-Zz-fSE" firstAttribute="top" secondItem="yXX-3R-z6e" secondAttribute="top" id="Rom-NA-JfJ"/>
+                                <constraint firstItem="6y3-Zz-fSE" firstAttribute="leading" secondItem="yXX-3R-z6e" secondAttribute="leading" id="u6d-3c-CzW"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="2"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.14928597211837769" green="0.79782861471176147" blue="0.77961695194244385" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWith">
+                                    <real key="value" value="1.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" width="50" style="plain" id="Z7c-ua-cCi">
+                            <view key="customView" contentMode="scaleToFill" id="1Nz-Wv-D85">
+                                <rect key="frame" x="309" y="5" width="50" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrJ-OX-yZi">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="33"/>
+                                        <color key="backgroundColor" red="0.37047642469406128" green="0.71100670099258423" blue="0.70028316974639893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Ghi">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="KrJ-OX-yZi" firstAttribute="top" secondItem="1Nz-Wv-D85" secondAttribute="top" id="Vu6-0l-ShE"/>
+                                    <constraint firstAttribute="trailing" secondItem="KrJ-OX-yZi" secondAttribute="trailing" id="YiX-hK-FT9"/>
+                                    <constraint firstAttribute="bottom" secondItem="KrJ-OX-yZi" secondAttribute="bottom" id="e6W-jN-axO"/>
+                                    <constraint firstItem="KrJ-OX-yZi" firstAttribute="leading" secondItem="1Nz-Wv-D85" secondAttribute="leading" id="etK-Ye-DAC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YXM-cZ-AVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="131.78410794602701"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XO5-44-CHz">
+            <objects>
+                <navigationController storyboardIdentifier="Records" automaticallyAdjustsScrollViewInsets="NO" id="qd3-DF-64x" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8Yz-kP-Vyp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.21568402647972107" green="0.6405566930770874" blue="0.62586206197738647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.21568402649999999" green="0.64055669309999996" blue="0.62586206200000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FdE-4f-zUG" kind="relationship" relationship="rootViewController" id="NUX-kf-dMZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUd-4U-69W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Book" width="25" height="25"/>
+        <image name="GhiChep_hightlight" width="25" height="25"/>
+        <image name="GhiChep_light" width="25" height="25"/>
+        <image name="Sort_down" width="25" height="25"/>
+    </resources>
+</document>
