@@ -19,6 +19,7 @@
 		65B9B7E41EF7C4250051F8BE /* Utilities.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B9B7E31EF7C4250051F8BE /* Utilities.storyboard */; };
 		65B9B7E61EF7C5DC0051F8BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B9B7E51EF7C5DC0051F8BE /* Assets.xcassets */; };
 		65B9B7E91EF7DAF20051F8BE /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9B7E81EF7DAF20051F8BE /* ViewExtensions.swift */; };
+		65B9B80F1EFAC3900051F8BE /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9B80E1EFAC3900051F8BE /* ContainerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		65B9B7E31EF7C4250051F8BE /* Utilities.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Utilities.storyboard; sourceTree = "<group>"; };
 		65B9B7E51EF7C5DC0051F8BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B9B7E81EF7DAF20051F8BE /* ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		65B9B80E1EFAC3900051F8BE /* ContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				659F9DA21EF7B1B000758D98 /* AppDelegate.swift */,
+				65B9B80E1EFAC3900051F8BE /* ContainerVC.swift */,
 				65B9B7E71EF7DAA30051F8BE /* Utilities */,
 				65B9B7DA1EF7C3E20051F8BE /* View */,
 				659F9DAE1EF7B1B000758D98 /* LaunchScreen.storyboard */,
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B9B80F1EFAC3900051F8BE /* ContainerVC.swift in Sources */,
 				659F9DAB1EF7B1B000758D98 /* MoneyKeeper.xcdatamodeld in Sources */,
 				65B9B7E91EF7DAF20051F8BE /* ViewExtensions.swift in Sources */,
 				659F9DA31EF7B1B000758D98 /* AppDelegate.swift in Sources */,
