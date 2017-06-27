@@ -20,6 +20,7 @@ extension ContainerVC {
     func constraintForCalculatorViewClose() {
         bottomCalcuConstraint.constant = -calculatorContainerView.bounds.height
         coverButton.alpha = 0
+        tabBarController?.tabBar.isHidden = false
     }
     
     func calculatorViewUp() {
@@ -29,5 +30,6 @@ extension ContainerVC {
     func registerNotification() {
         NotificationCenter.default.addObserver(self, selector: #selector(calculatorViewUp), name: NotificationKey.textFieldClick, object: nil)
     }
+    
     
 }

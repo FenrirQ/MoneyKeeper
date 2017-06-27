@@ -10,6 +10,8 @@
 		6580652E1EFBC885001504EA /* TableRecordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580652D1EFBC885001504EA /* TableRecordsVC.swift */; };
 		658065311EFC249E001504EA /* ConstraintForMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658065301EFC249E001504EA /* ConstraintForMenuView.swift */; };
 		658065331EFC2720001504EA /* ConstraintForCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658065321EFC2720001504EA /* ConstraintForCalculatorView.swift */; };
+		658065351EFD140E001504EA /* CalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658065341EFD140E001504EA /* CalculatorVC.swift */; };
+		658065371EFE158F001504EA /* CalculatorServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658065361EFE158F001504EA /* CalculatorServices.swift */; };
 		659F9DA31EF7B1B000758D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659F9DA21EF7B1B000758D98 /* AppDelegate.swift */; };
 		659F9DA81EF7B1B000758D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659F9DA61EF7B1B000758D98 /* Main.storyboard */; };
 		659F9DAB1EF7B1B000758D98 /* MoneyKeeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 659F9DA91EF7B1B000758D98 /* MoneyKeeper.xcdatamodeld */; };
@@ -29,6 +31,8 @@
 		6580652D1EFBC885001504EA /* TableRecordsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRecordsVC.swift; sourceTree = "<group>"; };
 		658065301EFC249E001504EA /* ConstraintForMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintForMenuView.swift; sourceTree = "<group>"; };
 		658065321EFC2720001504EA /* ConstraintForCalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintForCalculatorView.swift; sourceTree = "<group>"; };
+		658065341EFD140E001504EA /* CalculatorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorVC.swift; sourceTree = "<group>"; };
+		658065361EFE158F001504EA /* CalculatorServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorServices.swift; sourceTree = "<group>"; };
 		659F9D9F1EF7B1B000758D98 /* MoneyKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659F9DA21EF7B1B000758D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		659F9DA71EF7B1B000758D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,8 +68,17 @@
 				6580652D1EFBC885001504EA /* TableRecordsVC.swift */,
 				658065301EFC249E001504EA /* ConstraintForMenuView.swift */,
 				658065321EFC2720001504EA /* ConstraintForCalculatorView.swift */,
+				658065341EFD140E001504EA /* CalculatorVC.swift */,
 			);
 			name = "Records Controller";
+			sourceTree = "<group>";
+		};
+		658065381EFE15B1001504EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				658065361EFE158F001504EA /* CalculatorServices.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		659F9D961EF7B1B000758D98 = {
@@ -88,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				659F9DA21EF7B1B000758D98 /* AppDelegate.swift */,
+				658065381EFE15B1001504EA /* Model */,
 				6580652F1EFBCA30001504EA /* Records Controller */,
 				65B9B7E71EF7DAA30051F8BE /* Utilities */,
 				65B9B7DA1EF7C3E20051F8BE /* View */,
@@ -199,11 +213,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658065351EFD140E001504EA /* CalculatorVC.swift in Sources */,
 				65B9B80F1EFAC3900051F8BE /* ContainerVC.swift in Sources */,
 				6580652E1EFBC885001504EA /* TableRecordsVC.swift in Sources */,
 				658065311EFC249E001504EA /* ConstraintForMenuView.swift in Sources */,
 				659F9DAB1EF7B1B000758D98 /* MoneyKeeper.xcdatamodeld in Sources */,
 				658065331EFC2720001504EA /* ConstraintForCalculatorView.swift in Sources */,
+				658065371EFE158F001504EA /* CalculatorServices.swift in Sources */,
 				65B9B7E91EF7DAF20051F8BE /* ViewExtensions.swift in Sources */,
 				659F9DA31EF7B1B000758D98 /* AppDelegate.swift in Sources */,
 			);

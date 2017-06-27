@@ -729,10 +729,10 @@
             </objects>
             <point key="canvasLocation" x="120.8" y="131.78410794602701"/>
         </scene>
-        <!--View Controller-->
+        <!--CalculatorVC-->
         <scene sceneID="HWi-VU-3b2">
             <objects>
-                <viewController id="oC9-jc-JDQ" sceneMemberID="viewController">
+                <viewController id="oC9-jc-JDQ" customClass="CalculatorVC" customModule="MoneyKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lkq-GT-vBL"/>
                         <viewControllerLayoutGuide type="bottom" id="Gih-U2-P4m"/>
@@ -765,6 +765,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="b7m-oU-emq"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E89-uM-tg2">
                                                 <rect key="frame" x="0.0" y="53.5" width="87.5" height="48.5"/>
@@ -783,6 +786,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="olj-9E-WBG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gm-Sm-EQh">
                                                 <rect key="frame" x="0.0" y="107" width="87.5" height="48"/>
@@ -801,6 +807,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="o4F-xe-e3m"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfJ-40-maI">
                                                 <rect key="frame" x="0.0" y="160" width="87.5" height="48.5"/>
@@ -819,6 +828,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="gZm-dz-w84"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qbb-EZ-R3z">
                                                 <rect key="frame" x="0.0" y="213.5" width="87.5" height="48.5"/>
@@ -837,6 +849,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="b7Y-Sy-b9E"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -860,6 +875,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="LqS-rt-aO8"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utp-c5-kPd">
                                                 <rect key="frame" x="0.0" y="53.5" width="87.5" height="48.5"/>
@@ -878,6 +896,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="xnf-6Y-4lv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cw-tX-yBP">
                                                 <rect key="frame" x="0.0" y="107" width="87.5" height="48"/>
@@ -896,6 +917,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="Yy2-Ot-soA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qe5-cI-vol">
                                                 <rect key="frame" x="0.0" y="160" width="87.5" height="48.5"/>
@@ -914,6 +938,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="NBZ-Fl-8Ya"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nY3-Ix-oKf">
                                                 <rect key="frame" x="0.0" y="213.5" width="87.5" height="48.5"/>
@@ -932,6 +959,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="CED-Yx-42w"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -955,6 +985,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="94l-4T-8Rc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkI-7h-TSQ">
                                                 <rect key="frame" x="0.0" y="53.5" width="87.5" height="48.5"/>
@@ -973,6 +1006,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="ghf-IH-CLF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-7a-bK8">
                                                 <rect key="frame" x="0.0" y="107" width="87.5" height="48"/>
@@ -991,6 +1027,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="3Xp-He-RgM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igX-W3-ZMR">
                                                 <rect key="frame" x="0.0" y="160" width="87.5" height="48.5"/>
@@ -1009,6 +1048,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="PTu-dQ-VPd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3G-rm-0Sx">
                                                 <rect key="frame" x="0.0" y="213.5" width="87.5" height="48.5"/>
@@ -1027,6 +1069,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="Ngf-me-ZZV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -1049,6 +1094,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="deleteButtonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="qqf-Rp-42h"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyg-H0-iec">
                                                 <rect key="frame" x="0.0" y="53.5" width="87.5" height="48.5"/>
@@ -1067,6 +1115,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="wCt-Sn-P9O"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTh-mT-f66">
                                                 <rect key="frame" x="0.0" y="107" width="87.5" height="48"/>
@@ -1085,10 +1136,14 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="Kwd-Z7-4eJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChQ-21-cBA">
                                                 <rect key="frame" x="0.0" y="160" width="87.5" height="48.5"/>
-                                                <state key="normal">
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <state key="normal" title="=">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -1102,6 +1157,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="asD-PK-qs6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tex-kc-Ose">
                                                 <rect key="frame" x="0.0" y="213.5" width="87.5" height="48.5"/>
@@ -1120,6 +1178,9 @@
                                                         <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="keyboardButtonTapped:" destination="oC9-jc-JDQ" eventType="touchUpInside" id="bge-hw-e97"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
