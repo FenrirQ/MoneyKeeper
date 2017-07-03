@@ -13,7 +13,17 @@ class TableRecordsVC: UITableViewController, UITextFieldDelegate {
     
     @IBOutlet weak var moneyTextField: UITextField!
     
+    @IBOutlet weak var changeCellHeightSwitch: UISwitch!
+    @IBOutlet weak var lenderCell: UITableViewCell!
+    
+    
     var done = true
+    
+    //get View from storyboard
+    static var instance: TableRecordsVC {
+        let storyboard = UIStoryboard(name: "Records", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: "ChiTienVC") as! TableRecordsVC
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +31,17 @@ class TableRecordsVC: UITableViewController, UITextFieldDelegate {
         registerNotification()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        NotificationCenter.default.post(name: NotificationKey.setTitleMenuButton, object: nil, userInfo: ["rowName":"Chi tiền"])
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
     // MARK: UITextFieldDelegate
-
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
         NotificationCenter.default.post(name: NotificationKey.textFieldClick, object: nil)
         moneyTextField.resignFirstResponder()
@@ -40,6 +54,8 @@ class TableRecordsVC: UITableViewController, UITextFieldDelegate {
     }
     
     var calService: CalculatorServices = CalculatorServices()
+    
+    // Create action for calculator buttons
     
     func moneyTextFieldUpdate(_ notification: Notification) {
         let dict = notification.userInfo!
@@ -79,6 +95,23 @@ class TableRecordsVC: UITableViewController, UITextFieldDelegate {
     }
     
     
+    
+    @IBAction func changeCellSwitch(_ sender: UISwitch) {
+        tableView.reloadData()
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath.row {
+        case 12:
+            if !changeCellHeightSwitch.isOn {return 0}
+            return 44
+        case 0,2,5,10,13,15:
+            return 10
+        default:
+            return 44
+        }
+    }
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -88,4 +121,5 @@ class TableRecordsVC: UITableViewController, UITextFieldDelegate {
 struct NotificationKey {
     static let textFieldClick = NSNotification.Name.init("textFieldClick")
     static let calculatorTap = NSNotification.Name.init("calculatorTap")
+    static let setTitleMenuButton = NSNotification.Name.init("setTitleMenuButton")
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class ContainerVC: UIViewController {
-
+    
     
     @IBOutlet weak var mainContainerView: UIView!
     @IBOutlet weak var coverButton: UIButton!
@@ -19,6 +19,10 @@ class ContainerVC: UIViewController {
     @IBOutlet weak var topMenuConstraint: NSLayoutConstraint!
     @IBOutlet weak var bottomCalcuConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var menuButton: UIButton!
+    
+    var pageViewController: PageViewController?
+    var menuTableVC: MenuTableVC?
     
     var isMenuViewOpen: Bool = true {
         didSet {
@@ -43,15 +47,17 @@ class ContainerVC: UIViewController {
             }
         }
     }
-
     
+    // MARK: LIFE CYCLE
     
     override func viewDidLoad() {
         super.viewDidLoad()
         registerNotification()
+        registerNotificationForPageView()
         // Do any additional setup after loading the view.
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -59,6 +65,20 @@ class ContainerVC: UIViewController {
     
     deinit {
         NotificationCenter.default.removeObserver(self)
+    }
+    
+    // MARK: Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier ?? "" {
+        case "EmbedMenuSide":
+            menuTableVC = segue.destination as? MenuTableVC
+        case "EmbedPage":
+            pageViewController = segue.destination as? PageViewController
+        default:
+            return
+        }
+        menuTableVC?.delegate = pageViewController
     }
     
 }
