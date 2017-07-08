@@ -10,7 +10,7 @@ import UIKit
 
 class MenuTableVC: UITableViewController {
 
-    var delegate: MenuButtonProtocol?
+    var delegate: MenuTableProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +31,6 @@ class MenuTableVC: UITableViewController {
 
 }
 
-protocol MenuButtonProtocol {
+protocol MenuTableProtocol {
     func passIndexFromCell(index: Int)
 }

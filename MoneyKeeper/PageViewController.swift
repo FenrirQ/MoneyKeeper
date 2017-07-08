@@ -41,7 +41,7 @@ class PageViewController: UIPageViewController {
 
 
 
-extension PageViewController: MenuButtonProtocol {
+extension PageViewController: MenuTableProtocol {
     
     func passIndexFromCell(index: Int) {
         jump(toIndex: index)

@@ -16,6 +16,9 @@ class TableRecordsVC: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var changeCellHeightSwitch: UISwitch!
     @IBOutlet weak var lenderCell: UITableViewCell!
     
+    @IBOutlet weak var expenseImage: UIImageView!
+    @IBOutlet weak var expenseName: UILabel!
+    
     
     var done = true
     
@@ -29,6 +32,7 @@ class TableRecordsVC: UITableViewController, UITextFieldDelegate {
         super.viewDidLoad()
         moneyTextField.delegate = self
         registerNotification()
+        registerNotificationFromExtenseTVC()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -116,10 +120,24 @@ class TableRecordsVC: UITableViewController, UITextFieldDelegate {
         NotificationCenter.default.removeObserver(self)
     }
     
+    
 }
 
-struct NotificationKey {
-    static let textFieldClick = NSNotification.Name.init("textFieldClick")
-    static let calculatorTap = NSNotification.Name.init("calculatorTap")
-    static let setTitleMenuButton = NSNotification.Name.init("setTitleMenuButton")
+extension TableRecordsVC {
+    func registerNotificationFromExtenseTVC() {
+        NotificationCenter.default.addObserver(self, selector: #selector(setTitleForExpense), name: NotificationKey.postNotiFromCell, object: nil)
+    }
+    
+    func setTitleForExpense(_ notification: Notification) {
+        guard let userInfo = notification.userInfo else {return}
+        let name = Array(userInfo.keys)
+        let image = Array(userInfo.values)
+        
+        expenseName.text = name[0] as? String
+        expenseImage.image = image[0] as? UIImage
+        
+    }
 }
+
+
+
