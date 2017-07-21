@@ -28,6 +28,7 @@ class ExpenseDelegate: NSObject, UITableViewDelegate {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         //create view for section header
+        
         let view = UIView(frame: CGRect(x: tableView.frame.width/5, y: 0, width: tableView.frame.width, height: 44))
         view.backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1)
         
@@ -64,11 +65,7 @@ class ExpenseDelegate: NSObject, UITableViewDelegate {
     }
     
     func updateRows(section: Int) {
-        expenseVC.tableView.beginUpdates()
-        for i in 0 ..< ExpenseModel.shared.getKeysFromExpenseKeyAt(index: section).count {
-            expenseVC.tableView.reloadRows(at: [IndexPath(row: i, section: section)], with: .automatic)
-        }
-        expenseVC.tableView.endUpdates()
+        expenseVC.tableView.reloadSections(IndexSet(integer: section), with: .automatic)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

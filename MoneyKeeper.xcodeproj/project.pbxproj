@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		655C45E21F186E2100EECB04 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655C45E11F186E2100EECB04 /* TutorialVC.swift */; };
 		6580652E1EFBC885001504EA /* TableRecordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580652D1EFBC885001504EA /* TableRecordsVC.swift */; };
 		658065311EFC249E001504EA /* ContainerVC+ ConstraintForMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658065301EFC249E001504EA /* ContainerVC+ ConstraintForMenuView.swift */; };
 		658065331EFC2720001504EA /* ContainerVC+ ConstraintForCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658065321EFC2720001504EA /* ContainerVC+ ConstraintForCalculatorView.swift */; };
@@ -31,6 +32,7 @@
 		65C2E4481F0CE410002DD111 /* ExpenseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2E4471F0CE410002DD111 /* ExpenseDelegate.swift */; };
 		65C2E44A1F0E2019002DD111 /* LoanDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2E4491F0E2019002DD111 /* LoanDelegate.swift */; };
 		65C2E44C1F0F336D002DD111 /* NotificationKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2E44B1F0F336D002DD111 /* NotificationKey.swift */; };
+		65C2E46D1F1153E2002DD111 /* DateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C2E46C1F1153E2002DD111 /* DateVC.swift */; };
 		65C3D2281F072B5B008F7388 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3D2271F072B5B008F7388 /* PageViewController.swift */; };
 		65C3D22C1F072C41008F7388 /* BasePageModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3D22B1F072C41008F7388 /* BasePageModelController.swift */; };
 		65C3D22E1F072D3A008F7388 /* GreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3D22D1F072D3A008F7388 /* GreenVC.swift */; };
@@ -39,9 +41,11 @@
 		65C3D2351F0741EC008F7388 /* MenuTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3D2341F0741EC008F7388 /* MenuTableVC.swift */; };
 		65C3D2371F074D97008F7388 /* ContainerVC+ ButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3D2361F074D97008F7388 /* ContainerVC+ ButtonBar.swift */; };
 		65C3D25D1F0B4C69008F7388 /* ExpenseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3D25C1F0B4C69008F7388 /* ExpenseVC.swift */; };
+		65FF07001F1FB7D100AECBEE /* UITextFieldImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FF06FF1F1FB7D100AECBEE /* UITextFieldImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		655C45E11F186E2100EECB04 /* TutorialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
 		6580652D1EFBC885001504EA /* TableRecordsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRecordsVC.swift; sourceTree = "<group>"; };
 		658065301EFC249E001504EA /* ContainerVC+ ConstraintForMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContainerVC+ ConstraintForMenuView.swift"; sourceTree = "<group>"; };
 		658065321EFC2720001504EA /* ContainerVC+ ConstraintForCalculatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContainerVC+ ConstraintForCalculatorView.swift"; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 		65C2E4471F0CE410002DD111 /* ExpenseDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseDelegate.swift; sourceTree = "<group>"; };
 		65C2E4491F0E2019002DD111 /* LoanDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoanDelegate.swift; sourceTree = "<group>"; };
 		65C2E44B1F0F336D002DD111 /* NotificationKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationKey.swift; sourceTree = "<group>"; };
+		65C2E46C1F1153E2002DD111 /* DateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateVC.swift; sourceTree = "<group>"; };
 		65C3D2271F072B5B008F7388 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		65C3D22B1F072C41008F7388 /* BasePageModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasePageModelController.swift; path = ../BasePageModelController.swift; sourceTree = "<group>"; };
 		65C3D22D1F072D3A008F7388 /* GreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenVC.swift; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 		65C3D2341F0741EC008F7388 /* MenuTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableVC.swift; sourceTree = "<group>"; };
 		65C3D2361F074D97008F7388 /* ContainerVC+ ButtonBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContainerVC+ ButtonBar.swift"; sourceTree = "<group>"; };
 		65C3D25C1F0B4C69008F7388 /* ExpenseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseVC.swift; sourceTree = "<group>"; };
+		65FF06FF1F1FB7D100AECBEE /* UITextFieldImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,16 +95,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		655C45E31F186F2100EECB04 /* Tutorial Controller */ = {
+			isa = PBXGroup;
+			children = (
+				655C45E11F186E2100EECB04 /* TutorialVC.swift */,
+			);
+			name = "Tutorial Controller";
+			sourceTree = "<group>";
+		};
 		6580652F1EFBCA30001504EA /* Records Controller */ = {
 			isa = PBXGroup;
 			children = (
 				65B9B80E1EFAC3900051F8BE /* ContainerVC.swift */,
+				65C3D2361F074D97008F7388 /* ContainerVC+ ButtonBar.swift */,
 				65C3D2391F0B2F95008F7388 /* Calculator */,
 				65C3D2381F0B2F86008F7388 /* MenuSide */,
-				65C3D2361F074D97008F7388 /* ContainerVC+ ButtonBar.swift */,
-				65C3D2271F072B5B008F7388 /* PageViewController.swift */,
+				65C2E46B1F115344002DD111 /* Page View */,
 				65C2E43E1F0C91A9002DD111 /* Expense */,
-				65C3D2331F072D5D008F7388 /* Data Controller */,
+				65C2E46C1F1153E2002DD111 /* DateVC.swift */,
 			);
 			name = "Records Controller";
 			sourceTree = "<group>";
@@ -136,6 +150,7 @@
 				659F9DA21EF7B1B000758D98 /* AppDelegate.swift */,
 				658065381EFE15B1001504EA /* Model */,
 				6580652F1EFBCA30001504EA /* Records Controller */,
+				655C45E31F186F2100EECB04 /* Tutorial Controller */,
 				65B9B7E71EF7DAA30051F8BE /* Utilities */,
 				65B9B7DA1EF7C3E20051F8BE /* View */,
 				659F9DAE1EF7B1B000758D98 /* LaunchScreen.storyboard */,
@@ -164,6 +179,7 @@
 			children = (
 				65B9B7E81EF7DAF20051F8BE /* ViewExtensions.swift */,
 				65C2E44B1F0F336D002DD111 /* NotificationKey.swift */,
+				65FF06FF1F1FB7D100AECBEE /* UITextFieldImage.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -178,6 +194,15 @@
 				65C2E4491F0E2019002DD111 /* LoanDelegate.swift */,
 			);
 			name = Expense;
+			sourceTree = "<group>";
+		};
+		65C2E46B1F115344002DD111 /* Page View */ = {
+			isa = PBXGroup;
+			children = (
+				65C3D2271F072B5B008F7388 /* PageViewController.swift */,
+				65C3D2331F072D5D008F7388 /* Data Controller */,
+			);
+			name = "Page View";
 			sourceTree = "<group>";
 		};
 		65C3D2331F072D5D008F7388 /* Data Controller */ = {
@@ -293,10 +318,12 @@
 				65B9B80F1EFAC3900051F8BE /* ContainerVC.swift in Sources */,
 				65C3D2281F072B5B008F7388 /* PageViewController.swift in Sources */,
 				6580652E1EFBC885001504EA /* TableRecordsVC.swift in Sources */,
+				65C2E46D1F1153E2002DD111 /* DateVC.swift in Sources */,
 				658065311EFC249E001504EA /* ContainerVC+ ConstraintForMenuView.swift in Sources */,
 				65C2E4481F0CE410002DD111 /* ExpenseDelegate.swift in Sources */,
 				659F9DAB1EF7B1B000758D98 /* MoneyKeeper.xcdatamodeld in Sources */,
 				65C2E44C1F0F336D002DD111 /* NotificationKey.swift in Sources */,
+				65FF07001F1FB7D100AECBEE /* UITextFieldImage.swift in Sources */,
 				65C3D2321F072D56008F7388 /* BlueVC.swift in Sources */,
 				65C3D2301F072D47008F7388 /* RedVC.swift in Sources */,
 				65C3D22E1F072D3A008F7388 /* GreenVC.swift in Sources */,
@@ -304,6 +331,7 @@
 				65C3D22C1F072C41008F7388 /* BasePageModelController.swift in Sources */,
 				65C2E4421F0C9396002DD111 /* ExpenseDataSource.swift in Sources */,
 				65C2E43D1F0C6B00002DD111 /* ExpenseModel.swift in Sources */,
+				655C45E21F186E2100EECB04 /* TutorialVC.swift in Sources */,
 				65C3D2371F074D97008F7388 /* ContainerVC+ ButtonBar.swift in Sources */,
 				658065371EFE158F001504EA /* CalculatorServices.swift in Sources */,
 				65C2E4461F0CDCC0002DD111 /* LoanDataSource.swift in Sources */,
