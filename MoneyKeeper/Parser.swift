@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class Parser {
     
@@ -27,5 +28,10 @@ class Parser {
             }
         }
         return myUsers
+    }
+    
+    func parseParameter(email: String, password: String) -> Parameters {
+        let parameter: Parameters = ["email" : email, "password" : password]
+        return parameter
     }
 }

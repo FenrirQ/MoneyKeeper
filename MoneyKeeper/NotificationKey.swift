@@ -13,4 +13,5 @@ struct NotificationKey {
     static let calculatorTap = NSNotification.Name.init("calculatorTap")
     static let setTitleMenuButton = NSNotification.Name.init("setTitleMenuButton")
     static let postNotiFromCell = NSNotification.Name.init("postNotiFromCell")
+    static let loginTapped = NSNotification.Name.init("loginTapped")
 }

@@ -13,7 +13,7 @@
         <!--TutorialVC-->
         <scene sceneID="1r3-VB-GYg">
             <objects>
-                <viewController id="ey4-Mw-iLX" customClass="TutorialVC" customModule="MoneyKeeper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TutorialVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ey4-Mw-iLX" customClass="TutorialVC" customModule="MoneyKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HjX-rd-gAx"/>
                         <viewControllerLayoutGuide type="bottom" id="vuH-4W-yuD"/>
@@ -170,7 +170,7 @@
                         <outlet property="rightButton" destination="SEl-QN-UV8" id="SIs-pn-UGi"/>
                         <outlet property="scroll" destination="9UL-kH-jBw" id="id7-3a-hG1"/>
                         <segue destination="7Z5-GU-yy9" kind="show" identifier="goToLogin" id="lZt-KP-7ig"/>
-                        <segue destination="znI-gI-pG0" kind="show" identifier="goToSignup" id="vS5-cO-rhI"/>
+                        <segue destination="gNU-w3-qUr" kind="presentation" identifier="goToSignup" id="oY6-qc-s4Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSo-hU-kNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -188,8 +188,11 @@
         <!--Navigation Controller-->
         <scene sceneID="IcH-yV-xBB">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLW-By-2OZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Z5-GU-yy9" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WKB-LJ-Hoh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -200,14 +203,32 @@
                         <segue destination="FVX-YP-cmo" kind="relationship" relationship="rootViewController" id="zbq-s5-N7i"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SLW-By-2OZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="433" y="-415"/>
+            <point key="canvasLocation" x="257" y="22"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="t2x-Nz-Olg">
+            <objects>
+                <navigationController id="gNU-w3-qUr" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v6z-a6-uoE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.29304143431858326" green="0.63608528545060139" blue="0.63012989167759625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KOs-zH-5SE" kind="relationship" relationship="rootViewController" id="K0r-QD-bB1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmL-hR-W4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="478" y="-629"/>
         </scene>
         <!--Đăng nhập-->
         <scene sceneID="Xw4-L8-gn6">
             <objects>
-                <tableViewController id="FVX-YP-cmo" sceneMemberID="viewController">
+                <tableViewController id="FVX-YP-cmo" customClass="LoginTVC" customModule="MoneyKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fL5-4P-4ko">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,7 +343,7 @@
                                                     <rect key="frame" x="10" y="0.0" width="355" height="44"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
@@ -366,6 +387,9 @@
                                                             <real key="value" value="3"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="login:" destination="FVX-YP-cmo" eventType="touchUpInside" id="NF6-cV-7KP"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -395,7 +419,7 @@
                                                     <rect key="frame" x="10" y="0.0" width="355" height="44"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NjW-F3-tvu">
-                                                            <rect key="frame" x="0.0" y="0.0" width="168" height="44"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="44"/>
                                                             <state key="normal" title="Đăng ký">
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
@@ -407,9 +431,12 @@
                                                                     <real key="value" value="3"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <segue destination="KOs-zH-5SE" kind="show" id="c2R-4f-dZw"/>
+                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYn-8n-shM">
-                                                            <rect key="frame" x="188" y="0.0" width="167" height="44"/>
+                                                            <rect key="frame" x="187.66666666666663" y="0.0" width="167.33333333333337" height="44"/>
                                                             <state key="normal" title="Quên mật khẩu">
                                                                 <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             </state>
@@ -451,7 +478,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Hoặc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6W9-AV-323">
-                                                            <rect key="frame" x="148" y="5" width="40" height="21"/>
+                                                            <rect key="frame" x="148" y="5" width="40" height="20.333333333333332"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -486,11 +513,11 @@
                                                     <rect key="frame" x="10" y="0.0" width="355" height="44"/>
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I26-pv-ZgG">
-                                                            <rect key="frame" x="0.0" y="0.0" width="168" height="44"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="44"/>
                                                             <state key="normal" image="loginfb"/>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tD-mE-Q26">
-                                                            <rect key="frame" x="188" y="0.0" width="167" height="44"/>
+                                                            <rect key="frame" x="187.66666666666663" y="0.0" width="167.33333333333337" height="44"/>
                                                             <state key="normal" image="logingg"/>
                                                         </button>
                                                     </subviews>
@@ -553,17 +580,26 @@
                     <navigationItem key="navigationItem" title="Đăng nhập" id="e5g-4Q-9p5">
                         <barButtonItem key="leftBarButtonItem" image="Left Arrow" id="4Hz-nD-bz2">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="back:" destination="FVX-YP-cmo" id="OE0-uw-B5X"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="Vcg-pF-m13" id="ozn-bF-glw"/>
+                        <outlet property="passwordTextField" destination="jfW-zn-oJ6" id="CcC-EU-p37"/>
+                        <segue destination="A0G-1F-Mef" kind="unwind" identifier="unwindFromLoginToMain" unwindAction="unwindToMain:" id="yjw-GC-JiE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9a-P1-lUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="A0G-1F-Mef" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1218" y="-415"/>
+            <point key="canvasLocation" x="1228" y="22"/>
         </scene>
         <!--Đăng ký-->
         <scene sceneID="zWX-rm-W1q">
             <objects>
-                <tableViewController id="KOs-zH-5SE" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Signup" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KOs-zH-5SE" customClass="SignupTVC" customModule="MoneyKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="fSk-XE-oDQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -579,7 +615,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login1" translatesAutoresizingMaskIntoConstraints="NO" id="f3k-br-rCB">
-                                                    <rect key="frame" x="300" y="0.0" width="75" height="30"/>
+                                                    <rect key="frame" x="300" y="0.0" width="114" height="30"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -606,7 +642,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qCb-Kb-MnP">
-                                                    <rect key="frame" x="20" y="0.0" width="355" height="60"/>
+                                                    <rect key="frame" x="20" y="0.0" width="394" height="60"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login2" translatesAutoresizingMaskIntoConstraints="NO" id="Wpd-0D-epk">
                                                             <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -615,7 +651,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sổ Thu Chi MISA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmb-i1-SIV">
-                                                            <rect key="frame" x="70" y="0.0" width="285" height="60"/>
+                                                            <rect key="frame" x="70" y="0.0" width="324" height="60"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="34"/>
                                                             <color key="textColor" red="0.32141268249999999" green="0.68357497450000004" blue="0.6729001403" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -678,7 +714,7 @@
                                                     <rect key="frame" x="10" y="0.0" width="355" height="44"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="password"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
@@ -711,7 +747,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLO-GH-CuE">
-                                                    <rect key="frame" x="10" y="0.0" width="355" height="44"/>
+                                                    <rect key="frame" x="10" y="0.0" width="394" height="44"/>
                                                     <color key="backgroundColor" red="0.21568402649999999" green="0.64055669309999996" blue="0.62586206200000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                     <state key="normal" title="Đăng ký">
@@ -722,6 +758,9 @@
                                                             <real key="value" value="3"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="signup:" destination="KOs-zH-5SE" eventType="touchUpInside" id="D5U-nn-VWB"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -748,7 +787,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1S-SU-CpG">
-                                                    <rect key="frame" x="20" y="0.0" width="335" height="44"/>
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="44"/>
                                                     <state key="normal" title="Bạn đã có tài khoản?">
                                                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
@@ -773,31 +812,21 @@
                     <navigationItem key="navigationItem" title="Đăng ký" id="ola-r3-ev2">
                         <barButtonItem key="leftBarButtonItem" image="Left Arrow" id="7iw-NE-cLg">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="back:" destination="KOs-zH-5SE" id="oW2-eH-xgm"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="tzR-qd-dP5" id="Uyj-RU-T36"/>
+                        <outlet property="passwordTextField" destination="Xbd-U1-vr9" id="Nb2-AL-UPT"/>
+                        <segue destination="BdX-WZ-Bh0" kind="unwind" identifier="unwindFromSignupToMain" unwindAction="unwindToMain:" id="Bpg-A7-PA2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1p-y5-p4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BdX-WZ-Bh0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1217" y="418"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="xob-5o-dhi">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="znI-gI-pG0" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pC0-TQ-ocj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.21568402647972107" green="0.6405566930770874" blue="0.62586206197738647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="KOs-zH-5SE" kind="relationship" relationship="rootViewController" id="TAv-4d-onx"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rz6-17-4nP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="433" y="418"/>
+            <point key="canvasLocation" x="2414" y="-408"/>
         </scene>
     </scenes>
     <resources>
@@ -814,4 +843,7 @@
         <image name="tutorial2" width="882" height="1272"/>
         <image name="tutorial3" width="882" height="1256"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="c2R-4f-dZw"/>
+    </inferredMetricsTieBreakers>
 </document>

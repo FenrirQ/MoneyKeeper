@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		653DC66A1F4054EB004FE491 /* SignupTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653DC6691F4054EB004FE491 /* SignupTVC.swift */; };
+		653DC6AC1F42B6E3004FE491 /* MainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653DC6AB1F42B6E3004FE491 /* MainTabbarController.swift */; };
 		655C45E21F186E2100EECB04 /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655C45E11F186E2100EECB04 /* TutorialVC.swift */; };
 		6580652E1EFBC885001504EA /* TableRecordsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6580652D1EFBC885001504EA /* TableRecordsVC.swift */; };
 		658065311EFC249E001504EA /* ContainerVC+ ConstraintForMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658065301EFC249E001504EA /* ContainerVC+ ConstraintForMenuView.swift */; };
@@ -15,6 +17,7 @@
 		658065371EFE158F001504EA /* CalculatorServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658065361EFE158F001504EA /* CalculatorServices.swift */; };
 		6599FF841F3D515A009066A0 /* TutorialDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599FF831F3D515A009066A0 /* TutorialDataServices.swift */; };
 		6599FF861F3D6FC5009066A0 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599FF851F3D6FC5009066A0 /* Parser.swift */; };
+		6599FFA61F3DA312009066A0 /* LoginTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6599FFA51F3DA312009066A0 /* LoginTVC.swift */; };
 		659F9DA31EF7B1B000758D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659F9DA21EF7B1B000758D98 /* AppDelegate.swift */; };
 		659F9DA81EF7B1B000758D98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659F9DA61EF7B1B000758D98 /* Main.storyboard */; };
 		659F9DAB1EF7B1B000758D98 /* MoneyKeeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 659F9DA91EF7B1B000758D98 /* MoneyKeeper.xcdatamodeld */; };
@@ -50,6 +53,8 @@
 /* Begin PBXFileReference section */
 		4194EA820395A48412D8F0BE /* Pods-MoneyKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyKeeper/Pods-MoneyKeeper.release.xcconfig"; sourceTree = "<group>"; };
 		58898CAF25C08B19DEFEA6D9 /* Pods-MoneyKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyKeeper/Pods-MoneyKeeper.debug.xcconfig"; sourceTree = "<group>"; };
+		653DC6691F4054EB004FE491 /* SignupTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupTVC.swift; sourceTree = "<group>"; };
+		653DC6AB1F42B6E3004FE491 /* MainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarController.swift; sourceTree = "<group>"; };
 		655C45E11F186E2100EECB04 /* TutorialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
 		6580652D1EFBC885001504EA /* TableRecordsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRecordsVC.swift; sourceTree = "<group>"; };
 		658065301EFC249E001504EA /* ContainerVC+ ConstraintForMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ContainerVC+ ConstraintForMenuView.swift"; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 		658065361EFE158F001504EA /* CalculatorServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorServices.swift; sourceTree = "<group>"; };
 		6599FF831F3D515A009066A0 /* TutorialDataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialDataServices.swift; sourceTree = "<group>"; };
 		6599FF851F3D6FC5009066A0 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		6599FFA51F3DA312009066A0 /* LoginTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTVC.swift; sourceTree = "<group>"; };
 		659F9D9F1EF7B1B000758D98 /* MoneyKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659F9DA21EF7B1B000758D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		659F9DA71EF7B1B000758D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				655C45E11F186E2100EECB04 /* TutorialVC.swift */,
+				6599FFA51F3DA312009066A0 /* LoginTVC.swift */,
+				653DC6691F4054EB004FE491 /* SignupTVC.swift */,
 				6599FF831F3D515A009066A0 /* TutorialDataServices.swift */,
 				6599FF851F3D6FC5009066A0 /* Parser.swift */,
 			);
@@ -170,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				659F9DA21EF7B1B000758D98 /* AppDelegate.swift */,
+				653DC6AB1F42B6E3004FE491 /* MainTabbarController.swift */,
 				658065381EFE15B1001504EA /* Model */,
 				6580652F1EFBCA30001504EA /* Records Controller */,
 				655C45E31F186F2100EECB04 /* Tutorial Controller */,
@@ -395,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C2E44A1F0E2019002DD111 /* LoanDelegate.swift in Sources */,
+				653DC6AC1F42B6E3004FE491 /* MainTabbarController.swift in Sources */,
 				658065351EFD140E001504EA /* CalculatorVC.swift in Sources */,
 				65C3D25D1F0B4C69008F7388 /* ExpenseVC.swift in Sources */,
 				65B9B80F1EFAC3900051F8BE /* ContainerVC.swift in Sources */,
@@ -403,7 +413,9 @@
 				65C2E46D1F1153E2002DD111 /* DateVC.swift in Sources */,
 				658065311EFC249E001504EA /* ContainerVC+ ConstraintForMenuView.swift in Sources */,
 				65C2E4481F0CE410002DD111 /* ExpenseDelegate.swift in Sources */,
+				653DC66A1F4054EB004FE491 /* SignupTVC.swift in Sources */,
 				659F9DAB1EF7B1B000758D98 /* MoneyKeeper.xcdatamodeld in Sources */,
+				6599FFA61F3DA312009066A0 /* LoginTVC.swift in Sources */,
 				65C2E44C1F0F336D002DD111 /* NotificationKey.swift in Sources */,
 				65FF07001F1FB7D100AECBEE /* UITextFieldImage.swift in Sources */,
 				65C3D2321F072D56008F7388 /* BlueVC.swift in Sources */,
